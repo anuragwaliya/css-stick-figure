@@ -1,0 +1,71 @@
+$main: #545775;
+body {
+  background: #FBD1A2;
+}
+
+.container,
+.head,
+.shoulder,
+.hand,
+.bod {
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 350px;
+}
+
+.head {
+  width: 50px;
+  height: 50px;
+  background: $main;
+  border-radius: 100%;
+}
+
+.shoulder {
+  top: 55px;
+  left: -40px;
+  width: 130px;
+  height: 40px;
+  background: $main;
+  border-radius: 100px 100px 0 0;
+}
+
+.hand {
+  width: 25px;
+  height: 100px;
+  background: $main;
+  border-radius: 100px;
+  top: 80px;
+  left: -40px;
+}
+
+.hand.right {
+  left: 65px;
+}
+
+.bod {
+  width: 70px;
+  height: 120px;
+  background: $main;
+  top: 70px;
+  left: -10px;
+}
+
+.leg {
+  @extend .hand;
+  height: 130px;
+  width: 25px;
+  top: 176px;
+  left: -10px;
+}
+
+.leg.right {
+  left: 35px;
+}
